@@ -1,1 +1,79 @@
 @charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body{
+    overflow: hidden;
+}
+
+#wrap_p{
+    height: 100%;
+    position: relative;
+    width: 1200%;
+}
+
+.box{
+    height: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    width: calc(100%/12);
+}
+
+#box1{
+    background-color: gold;
+}
+
+#box2{
+    background-color: lavender;
+}
+
+#box3{
+    background-color: lawngreen;
+}
+
+#box4{
+    background-color: lightcoral;
+}
+
+#box5{
+    background-color: lightgreen;
+}
+
+#box6{
+    background-color: lightskyblue;
+}
+
+#box7{
+    background-color: lightpink;
+}
+
+#box8{
+    background-color: lime;
+}
+
+#box9{
+    background-color: aquamarine;
+}
+
+#box10{
+    background-color: sandybrown;
+}
+
+#box11{
+    background-color: salmon;
+}
+
+#box12{
+    background-color: cyan;
+}
