@@ -15,8 +15,23 @@ body{
     overflow: hidden;
 }
 
-#wrap_p{
-    height: 100%;
+#wrap_f{
+    height: 400%;
+    width: 100%;
+    position: relative;
+}
+
+.box_f{
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    height: calc(100%/4);
+}
+
+#box_f4{
+    height: calc(100%/4);
     position: relative;
     width: 1200%;
 }
@@ -28,6 +43,18 @@ body{
     font-size: 24px;
     float: left;
     width: calc(100%/12);
+}
+
+#box_f1{
+    background-color: green;
+}
+
+#box_f2{
+    background-color: yellowgreen;
+}
+
+#box_f3{
+    background-color: lightgreen;
 }
 
 #box1{

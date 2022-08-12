@@ -1,5 +1,5 @@
-var bn = $(".box").length;
-$(".box").on("mousewheel DOMMouseScroll", function (e) {
+var bn = $(".box_f").length;
+$(".box_f").on("mousewheel DOMMouseScroll", function (e) {
     e.preventDefault();
     var delta = 0;
     if (!event) event = window.event;
@@ -14,10 +14,10 @@ $(".box").on("mousewheel DOMMouseScroll", function (e) {
         n = $(this).index() - 1;
     }
     console.log(n)
-    if (n >= bn) {
-        n = bn - 1;
+    if (n >= 4) {
+        n = 4 - 1;
     } else if (n <= -1) {
         n = 0
     }
-    $("#box_f4").stop().animate({ left: -n * 100 + "%" });
+    $("#wrap_f").stop().animate({ top: -n * 100 + "%" });
 });
