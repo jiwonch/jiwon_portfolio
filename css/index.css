@@ -15,6 +15,18 @@ body{
     overflow: hidden;
 }
 
+ul, li, ol{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    box-sizing: border-box;
+}
+
 #wrap_f{
     height: 400%;
     width: 100%;
