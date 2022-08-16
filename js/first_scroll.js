@@ -19,8 +19,10 @@ $(".box_f").on("mousewheel DOMMouseScroll", function (e) {
         if (n == 3) {
             if (p == -1) {
                 n = $(this).index() - 1;
+                console.log(p);
             } else if (p >= 0) {
                 n = $(this).index();
+                console.log(p);
             }
         } else {
             n = $(this).index() - 1;
@@ -58,10 +60,10 @@ $(".box").on("mousewheel DOMMouseScroll", function (e) {
     if (p >= t) {
         p = t - 1;
     } else if (p <= -1) {
-        p = 0
+        p = 0;
     }
     // console.log(t);
-    console.log(p);
+    // console.log(p);
 
     $("#wrap_f #box_f4").stop().animate({ left: -p * 100 + "%" });
     // $(".box").css({top:0},{position:fixed});
