@@ -19,5 +19,6 @@ $(".box").on("mousewheel DOMMouseScroll", function (e) {
     } else if (n <= -1) {
         n = 0
     }
-    $("#box_f4").stop().animate({ left: -n * 100 + "%" });
+    $("#box_f4").stop().animate({ left: -n * 100 + "%" }).css({top:0}.css({position:fixed}));
+    // $(".box").css({top:0}.css({position:fixed}));
 });
