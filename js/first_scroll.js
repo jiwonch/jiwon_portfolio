@@ -17,7 +17,7 @@ $(".box_f").on("mousewheel DOMMouseScroll", function (e) {
         // n = $(this).index() - 1;
 
         if (n == 3) {
-            if (p == -1) {
+            if (p == 0) {
                 n = $(this).index() - 1;
                 console.log(p);
             } else if (p >= 0) {
