@@ -1,10 +1,16 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -322,55 +328,92 @@ table {
 }
 
 #box_f2 {
-    background: rgba(233, 184, 173, .2);
+    background: rgba(233, 184, 173, .4);
     /* background: -webkit-linear-gradient(to right bottom, #7BC6CC, #BE93C5,transparent);
     background: linear-gradient(to right bottom, #7BC6CC, #BE93C5,transparent); */
+    display: flex;
+    /* z-index: -2; */
 }
 
-#box_f2 h1 {
-    color: #fff;
-    margin: 20px;
-    float: right;
+#bf2_a{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid red;
+    position: relative;
+}
+
+#bf2_a h1 {
+    color: transparent;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 3.5rem;
     text-shadow:
-            0 6px 10px #94AEB7,
-            0 7px 0 #94AEB7,
-            0 8px 0 #94AEB7,
-            0 9px 0 #94AEB7,
+            -3px 5px 0px rgba(233, 184, 173,0.8),
+            -2px 6px 0 rgb(255, 255, 255, 0.4),
+            -1px 7px 0 rgb(255, 255, 255, 0.8),
             0 10px 200px rgba(0, 0, 0, 0.2);
     display: inline;
-    border-bottom: 10px solid #94AEB7;
+    transform: rotate(-90deg) scaleY(1.5);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 50;
+    /* font-family: 'Titan One', cursive; */
+    /* font-family: 'DM Serif Display', serif; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Bowlby One', cursive;
+    z-index: 200;
+}
+
+#box_f2 h2{
+    color: #A9B0B5;
+    font-size: 2.3rem;
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+#my_img{
+    position: relative;
+    width: 70%;
+    height: 75%;
+    margin-left: -10%;
+    z-index: 100 !important;
 }
 
 #my_photo{
     position: absolute;
-    top: 55%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
+    bottom: -10%;
+    right: -20%;
     background-color: #94AEB7;
+    z-index: 0;
 }
 
-#my_img{
+#my_photo_img{
     position: absolute;
-    top: 50%;
-    left: 18%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
+    z-index: 1;
+}
+
+#bf2_b{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #my_profile{
-    width: 1000px;
-    height: 700px;
+    width: 85%;
+    height: 75%;
     border: 1px solid red;
-    position: absolute;
-    top: 55%;
-    right: 5%;
-    transform: translateY(-50%);
 }
 
 #box_f3 {
